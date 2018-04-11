@@ -1,0 +1,8 @@
+@font-face {
+     font-family: "Caviar";
+     src: local(Caviar bold), url("fonts/caviar/CaviarDreams_Bold.ttf") format("truetype");
+}
+
+body{
+	  font-family: "Caviar", sans-serif;
+}
