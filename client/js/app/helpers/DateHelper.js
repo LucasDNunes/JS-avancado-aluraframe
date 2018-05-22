@@ -1,12 +1,16 @@
 class DateHelper {
 
-	dataParaTexto(data){
+	constructor(){
+		throw new Error('DateHelper não pode ser instanciada');
+	}
+
+	 static dataParaTexto(data){ // metodos staticos, pertencem a definição da classe nao rpecisando cirar uma instancia
 		return data.getDate() +
 			'/' + (data.getMonth() + 1) + 
 			'/' + data.getFullYear()
 	}
 
-	textoParaData(texto){
+	static textoParaData(texto){
 		//transformando em array para reconhecer no new Date()
 		//console.log(this._inputData.value.split('-'));  //  - quebrando as string apartir do '-'
 		//console.log(this._inputData.value.replace(/-/g,','));   - trocando os '-' para ','
