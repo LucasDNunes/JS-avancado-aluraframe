@@ -9,6 +9,6 @@ class ListaNegociacoes{
     }
 
     get negociacoes(){
-        return this._negociacoes;
+        return [].concat(this._negociacoes); //retorna um novvo array impossibilitando de alterar o array original
     }
 }
