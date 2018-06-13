@@ -1,13 +1,12 @@
 class NegociacaoController {
 		
 	constructor(){
-		// let - varial em bloco
+		// let - varial em bloco;
 		let $ = document.querySelector.bind(document);
 		this._inputData = $('#data');
 		this._inputQuantidade = $('#quantidade');
 		this._inputValor = $('#valor');
 		this._listaNegociacoes = new ListaNegociacoes();
-		this._negociacaoView = new NegociacoesView();
 
 	}
 
@@ -18,6 +17,7 @@ class NegociacaoController {
 		//let helper = new DateHelper();
 		this._listaNegociacoes.adiciona(this._criaNegociacao());
 		this._limpaFormulario();
+		
 		console.log(this._listaNegociacoes.negociacoes);
 		
 	}
